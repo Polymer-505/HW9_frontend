@@ -36,11 +36,11 @@ console.log(formatString("qwwwwwWwwwfwwwwwwwhhsdsdasssssssssssssssssssssssss"));
 
 const checkForSpam = function (message) {
   const messageArray = message.split(" ");
-  for (const messageArray of messageArray) {
-    if (messageArray === "spam") {
+  for (const messageWord of messageArray) {
+    if (messageWord === "spam") {
       return true;
     }
-    if (messageArray === "sale") {
+    if (messageWord === "sale") {
       return true;
     }
   }
@@ -48,22 +48,6 @@ const checkForSpam = function (message) {
 };
 console.log(checkForSpam("The sale email went to spam."));
 console.log(checkForSpam("I will go to the park."));
-
-const hjshrd = function (prompt) {
-  let input;
-  const numbers = [];
-  let total = 0;
-  input = prompt;
-  numbers.push(prompt);
-
-  for (let h = 0; h < numbers.length; h++) {
-    for (total of numbers) {
-      total = total + numbers[h];
-    }
-  }
-  return total;
-};
-prompt = prompt("Введи число");
 
 let input;
 const numbers = [];
